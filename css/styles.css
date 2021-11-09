@@ -39,6 +39,8 @@ nav ul li a:hover {
 /* Universal Styling */
 
 body {
+    width: 100%;
+    height: 100%;
     background: url("../images/highlands.jpg") no-repeat center fixed;
     background-size: cover;
 }
@@ -51,16 +53,17 @@ body {
 .container {
     position: relative;
     top: 60px;
-    max-width: 80%;
+    max-width: 900px;
     background-color: black;
     opacity: 75%;
     border: 3px solid white;
     padding: 30px;
     margin: 0 auto;
     border-radius: 10px;
+    overflow: hidden;
 }
 
-h1, h2, h3 {
+h1, h2 {
     font-family: 'Champagne', sans-serif;
     font-weight: bold;
     color: red
@@ -77,20 +80,41 @@ h2 {
     padding: 20px 0;
 }
 
-h3 {
-    text-transform: lowercase;
-}
-
-h3, li {
-    text-align: center;
-}
-
-li {
-    list-style-type: none;
-}
-
-p, li {
+p {
     font-family: 'Barlow', sans-serif;
     font-weight: bold;
     color: white
+}
+
+.text {
+    font-size: 20px;
+    color: red;
+}
+
+img {
+    position: relative;
+    float: right; 
+}
+
+.video {
+    float: left;
+}
+
+/* Animation Styling*/
+
+.cloud {
+    position: absolute;
+    width: 200px;
+    top: 120px; 
+    opacity: .5; 
+    animation: wind 40s linear infinite reverse; 
+}
+
+@keyframes wind {
+    from {
+        left: -300px; 
+    }
+    to {
+        left: 1000px; 
+    }
 }
