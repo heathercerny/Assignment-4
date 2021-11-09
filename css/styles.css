@@ -42,12 +42,20 @@ body {
     background: url("../images/highlands.jpg") no-repeat center fixed;
     background-size: cover;
 }
+
+@font-face {
+    font-family: 'Champagne';
+    src: url(../fonts/champagne.ttf);
+}
+
 .container {
+    position: relative;
+    top: 60px;
     max-width: 80%;
     background-color: black;
-    opacity: 60%;
+    opacity: 75%;
     border: 3px solid white;
-    padding: 60px 30px;
+    padding: 30px;
     margin: 0 auto;
     border-radius: 10px;
 }
