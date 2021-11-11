@@ -55,7 +55,7 @@ body {
     top: 60px;
     max-width: 900px;
     background-color: black;
-    opacity: 75%;
+    opacity: 90%;
     border: 3px solid white;
     padding: 30px;
     margin: 0 auto;
@@ -63,7 +63,7 @@ body {
     overflow: hidden;
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-family: 'Champagne', sans-serif;
     font-weight: bold;
     color: red
@@ -93,11 +93,12 @@ p {
 
 img {
     position: relative;
-    float: right; 
+    float: left; 
+    padding: 10px 10px 20px 0; 
 }
 
 .video {
-    float: left;
+    float: right;
 }
 
 /* Animation Styling*/
